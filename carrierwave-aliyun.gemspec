@@ -1,22 +1,35 @@
 # -*- encoding: utf-8 -*-
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
-require File.expand_path('lib/carrierwave/aliyun/version')
+# stub: carrierwave-aliyun 0.6.0 ruby lib
 
 Gem::Specification.new do |s|
-  s.name        = 'carrierwave-aliyun'
-  s.version     = CarrierWave::Aliyun::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Jason Lee']
-  s.email       = ['huacnlee@gmail.com']
-  s.homepage    = 'https://github.com/huacnlee/carrierwave-aliyun'
-  s.summary     = 'Aliyun OSS support for Carrierwave'
-  s.description = 'Aliyun OSS support for Carrierwave'
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
-  s.require_paths = ['lib']
-  s.license       = 'MIT'
+  s.name = "carrierwave-aliyun"
+  s.version = "0.6.9"
 
-  s.add_dependency 'carrierwave', ['>= 0.5.7']
-  s.add_dependency 'aliyun-oss-sdk', ['>= 0.1.6']
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
+  s.authors = ["Jason Lee"]
+  s.date = "2016-08-11"
+  s.description = "Aliyun OSS support for Carrierwave"
+  s.email = ["huacnlee@gmail.com"]
+  s.files = [".gitignore", ".rspec", ".rubocop.yml", ".travis.yml", "CHANGELOG.md", "Gemfile", "Gemfile.lock", "README.md", "Rakefile", "carrierwave-aliyun.gemspec", "lib/carrierwave-aliyun.rb", "lib/carrierwave/aliyun/bucket.rb", "lib/carrierwave/aliyun/configuration.rb", "lib/carrierwave/aliyun/version.rb", "lib/carrierwave/storage/aliyun.rb", "lib/carrierwave/storage/aliyun_file.rb", "spec/aliyun_spec.rb", "spec/foo.gif", "spec/foo.jpg", "spec/foo.zip", "spec/spec_helper.rb", "spec/upload_spec.rb"]
+  s.homepage = "https://github.com/huacnlee/carrierwave-aliyun"
+  s.licenses = ["MIT"]
+  s.rubygems_version = "2.4.5"
+  s.summary = "Aliyun OSS support for Carrierwave"
+  s.test_files = ["spec/aliyun_spec.rb", "spec/foo.gif", "spec/foo.jpg", "spec/foo.zip", "spec/spec_helper.rb", "spec/upload_spec.rb"]
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 4
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<carrierwave>, [">= 0.5.7"])
+      s.add_runtime_dependency(%q<aliyun-oss-sdk>, [">= 0.1.6"])
+    else
+      s.add_dependency(%q<carrierwave>, [">= 0.5.7"])
+      s.add_dependency(%q<aliyun-oss-sdk>, [">= 0.1.6"])
+    end
+  else
+    s.add_dependency(%q<carrierwave>, [">= 0.5.7"])
+    s.add_dependency(%q<aliyun-oss-sdk>, [">= 0.1.6"])
+  end
 end
