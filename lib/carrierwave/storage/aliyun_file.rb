@@ -49,6 +49,10 @@ module CarrierWave
         bucket.put(@path, file, opts)
       end
 
+      def empty?
+        !self.path
+      end
+      
       private
 
       def headers
