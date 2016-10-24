@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 # stub: carrierwave-aliyun 0.6.0 ruby lib
-require 'lib/carrierwave/aliyun/version'
+require 'carrierwave/aliyun/version'
 
 Gem::Specification.new do |s|
   s.name = "carrierwave-aliyun"
-  s.version = CarrierWave::Aliyun::VERSION
+  s.version = ::CarrierWave::Aliyun::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
