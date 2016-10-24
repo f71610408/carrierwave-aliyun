@@ -4,6 +4,7 @@ require 'carrierwave/aliyun/version'
 
 Gem::Specification.new do |s|
   s.name = "carrierwave-aliyun"
+  binding.pry
   s.version = CarrierWave::Aliyun::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
