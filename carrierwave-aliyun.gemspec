@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 # stub: carrierwave-aliyun 0.6.0 ruby lib
+require 'carrierwave/aliyun/version'
 
 Gem::Specification.new do |s|
   s.name = "carrierwave-aliyun"
